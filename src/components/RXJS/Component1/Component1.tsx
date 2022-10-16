@@ -1,5 +1,5 @@
 import { sharingInformationService } from '@/services/sharing-information-service';
-import { StyledContainer } from '@/styled-components';
+import { StyledButton, StyledContainer } from '@/styled-components';
 import React, { useState } from 'react';
 export interface Component1Interface {}
 
@@ -14,7 +14,7 @@ const Component1: React.FC<Component1Interface> = () => {
       <div>
         <h2>{Component1.name}</h2>
         <p>Counter value : {counter}</p>
-        <button onClick={handleClick}>Send information</button>
+        <StyledButton onClick={handleClick}>Send information</StyledButton>
       </div>
     </StyledContainer>
   );

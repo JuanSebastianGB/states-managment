@@ -1,3 +1,4 @@
+import { StyledButton, StyledInput } from '@/styled-components';
 import React, { useState } from 'react';
 import { useLandingContext } from '../../context';
 export interface Context1Interface {}
@@ -14,14 +15,15 @@ const Context1: React.FC<Context1Interface> = () => {
     <form action="" onSubmit={handleSubmit}>
       <label htmlFor="">
         {Context1.name}&nbsp;
-        <input
+        <StyledInput
           type="text"
           value={inputValue}
           name={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
+          placeholder="Data"
+          onChange={(e): void => setInputValue(e.target.value)}
         />
       </label>
-      <input type="submit" value="Send" />
+      <StyledButton>send</StyledButton>
     </form>
   );
 };
