@@ -1,0 +1,1 @@
+export { default as ReduxComponent2 } from './ReduxComponent2';

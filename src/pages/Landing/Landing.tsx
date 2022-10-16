@@ -1,6 +1,6 @@
 import { StyledContainer } from '@/styled-components';
 import React from 'react';
-import { Context1, Context2, Context3 } from './components';
+import { Context1, Context2, ReduxComponent2 } from './components';
 import { LandingProvider } from './context';
 export interface LandingInterface {}
 
@@ -11,7 +11,7 @@ const Landing: React.FC<LandingInterface> = () => {
         <LandingProvider>
           <Context1 />
           <Context2 />
-          <Context3 />
+          <ReduxComponent2 />
         </LandingProvider>
       </StyledContainer>
     </div>
